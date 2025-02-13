@@ -8,7 +8,7 @@
     "whatsapp"
   ],
   "logo": "https://telegra.ph/file/b148f6ed21fa02ac5325b.jpg",
-  "repository": "https://github.com/Keithkeizzah/ALPHA-TEST",
+  "repository": "https://github.com/Keithkeizzah/ALPHA",
   "succes_url": "/",
   "stack":"heroku-24",
   "env": {
