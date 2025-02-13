@@ -21,10 +21,21 @@
       "description": "Your contact status will be read automatically (type 'yes' to activate or 'no' to deactivate; don't write in capital letters)",
       "value": "yes",
       "required": false
+
     },
     "GREET": {
       "description": "when enabled it automatically sends  greeting message to members in your pm",
       "value": "no",
+      "required": false
+    },
+     "EMOJIS": {
+      "description": "replace with your favorite emojis",
+      "value": "🥲,😂,😭",
+      "required": false
+    },
+     "TIMEZONE": {
+      "description": "set your bot timezone",
+      "value": "Africa/Nairobi",
       "required": false
     },
     "AUTO_LIKE_STATUS": {
