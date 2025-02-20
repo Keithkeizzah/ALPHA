@@ -12,22 +12,28 @@ module.exports = { session: process.env.SESSION_ID || 'keith',
     GITHUB : process.env.GITHUB|| 'https://github.com/Keithkeizzah/ALPHA-MD',
     OWNER_NAME : process.env.OWNER_NAME || "Keith",
     NUMERO_OWNER : process.env.NUMERO_OWNER || "254748387615",  
-              
+    CHATBOT : process.env.CHATBOT || "no",  
+    CHATBOT_INBOX : process.env.CHATBOT_INBOX || "yes",                     
     AUTO_READ_STATUS: process.env.AUTO_READ_STATUS || "non",
     AUTO_DOWNLOAD_STATUS: process.env.AUTO_DOWNLOAD_STATUS || 'non',
-    AUTO_REACT: process.env.AUTO_REACTION || "non",  
+    AUTO_REACT: process.env.AUTO_REACTION || "non",
+    OWNER_REACT: process.env.OWNER_REACT || "yes",
     URL: process.env.URL || "https://files.catbox.moe/6hd2t7.jpg",  
     AUTO_LIKE_STATUS: process.env.AUTO_LIKE_STATUS || 'non',              
-    EMOJIS: process.env.EMOJIS || "⚔️,👿,🌎,💜",              
+    EMOJIS: process.env.EMOJIS || "⚔️, 👿, 🌎, 💜",
+    AUTOBIO_MSG: process.env.AUTOBIO_MSG || "I DON'T GIVE A FUCK⚔️",
+   GREET_MSG: process.env.GREET_MSG || "Huskii am unavailable mzee 😂",               
     AUTO_READ_MESSAGES: process.env.AUTO_READ_MESSAGES || "yes",
     AUTO_BLOCK: process.env.AUTO_BLOCK || 'no', 
     GCF: process.env.GROUP_CONTROL || 'no', 
     GREET : process.env.GREET || "no", 
-    TIMEZONE : process.env.TIMEZONE || "America/Chicago",              
-    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'viewed by alpha md',   
+    VOICE_CHATBOT: process.env.VOICE_CHATBOT || 'no',
+    VOICE_CHATBOT_INBOX: process.env.VOICE_CHATBOT_INBOX || 'yes',
+              
+    AUTO_STATUS_MSG: process.env.AUTO_STATUS_MSG || 'viewed by alpha',   
     AUTO_STATUS_REPLY: process.env.AUTO_STATUS_REPLY || 'no',
     AUTOBIO: process.env.AUTOBIO || 'yes',       
-    ANTICALL_MSG : process.env.ANTICALL_MESSAGE || '',             
+    ANTICALL_MSG : process.env.ANTICALL_MSG || 'call declined',             
     GURL: process.env.GURL  || "https://whatsapp.com/channel/0029Vaan9TF9Bb62l8wpoD47",
     EVENTS :process.env.EVENTS || "yes",
     CAPTION : process.env.CAPTION || "ALPHA-MD",
@@ -56,7 +62,7 @@ module.exports = { session: process.env.SESSION_ID || 'keith',
      protocol: 'postgres',
      dialectOptions: {
          native: true,
-         ssl: { require: true, rejectUnauthorized: false },
+         ssl: { require: true rejectUnauthorized: false },
      },
      logging: false,
 }),*/
@@ -68,4 +74,3 @@ fs.watchFile(fichier, () => {
     delete require.cache[fichier];
     require(fichier);
 });
-
